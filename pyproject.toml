@@ -1,0 +1,25 @@
+[project]
+name = "measles-modeling"
+version = "0.1.0"
+description = "SIR-based epidemic modeling for measles transmission dynamics"
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "numpy>=2.0",
+    "scipy>=1.14",
+    "matplotlib>=3.9",
+    "streamlit>=1.40",
+    "pyyaml>=6.0",
+    "manim>=0.18",
+]
+
+[dependency-groups]
+dev = [
+    "ruff>=0.9",
+]
+
+[tool.ruff]
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E", "F", "W"]

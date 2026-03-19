@@ -1,0 +1,22 @@
+# SIR model default parameters
+defaults:
+  R0: 2.5                 # basic reproduction number
+  infectious_period: 14   # days (1/gamma)
+  incubation_period: 5    # days (1/sigma) — SEIR, SEIRS only
+  immunity_duration: 365  # days (1/xi)   — SEIRS only
+  mortality_rate: 0.005   # daily death rate (mu) — SIRD only
+  N: 10000                # total population
+  days: 365               # simulation duration
+  I0: 1                   # initial infectious individuals
+
+# Scenarios to compare when running main.py
+scenarios:
+  - label: "Low transmission"
+    R0: 2.0
+    infectious_period: 14
+    N: 10000
+
+  - label: "High transmission"
+    R0: 3.0
+    infectious_period: 14
+    N: 10000
