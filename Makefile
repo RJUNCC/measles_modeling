@@ -1,13 +1,10 @@
-.PHONY: install run animate lint clean
+.PHONY: install run lint clean
 
 install:
 	uv sync
 
 run:
 	uv run streamlit run main.py
-
-animate:
-	uv run manim -pql animate_sird.py SIRDAnimation
 
 lint:
 	uv run ruff check .

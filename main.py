@@ -145,7 +145,7 @@ def run_sird(R0, infectious_period, mortality_rate, N, days, I0):
     }
 
 
-# ── Plotting ──────────────────────────────────────────────────────────────────
+# plotting
 
 COLORS = {
     "Susceptible": "#3c8c5c",

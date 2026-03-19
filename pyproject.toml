@@ -10,7 +10,6 @@ dependencies = [
     "matplotlib>=3.9",
     "streamlit>=1.40",
     "pyyaml>=6.0",
-    "manim>=0.18",
 ]
 
 [dependency-groups]
